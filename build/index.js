@@ -10,7 +10,7 @@ var app = (0, _express2.default)();
 var port = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
-    res.json({ message: "es6 modules are awesome but tiring sometimes" });
+    res.json({ message: "Dzień dobry! Trzeba było dodać \"--preset env\" do babela ale działa :)" });
 });
 
 app.listen(port, function () {
