@@ -1,0 +1,23 @@
+{
+  "name": "expresses6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s --presets env",
+    "build": "npm run build-babel",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "Me",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
